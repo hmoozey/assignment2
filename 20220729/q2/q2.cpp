@@ -17,7 +17,7 @@ int main()
 {
     string s1,s2;
     getline(cin, s1);
-    vector<string> sen, sen1;
+    vector<string> sen;
 
     for (int i = 0; i < s1.size(); i++)
     {
@@ -40,60 +40,56 @@ int main()
     {
         if (sen[i] == "He" || sen[i] == "She")
         {
-            sen1.push_back("He or she");
+            sen.push_back("He or she");
         }
         else if (sen[i] == "he" || sen[i] == "she")
         {
-            sen1.push_back("he or she");
+            sen.push_back("he or she");
         }
         else if (sen[i] == "he." || sen[i] == "she.")
         {
-            sen1.push_back("he or she.");
+            sen.push_back("he or she.");
         }
         else if (sen[i] == "Him" || sen[i] == "Her")
         {
-            sen1.push_back("Him or her");
+            sen.push_back("Him or her");
         }
         else if (sen[i] == "him" || sen[i] == "her")
         {
-            sen1.push_back("him or her");
+            sen.push_back("him or her");
         }
         else if (sen[i] == "him." || sen[i] == "her.")
         {
-            sen1.push_back("him or her.");
+            sen.push_back("him or her.");
         }
         else if (sen[i] == "Himself" || sen[i] == "Herself")
         {
-            sen1.push_back("Himself or herself");
+            sen.push_back("Himself or herself");
         }
         else if (sen[i] == "himself" || sen[i] == "herself")
         {
-            sen1.push_back("himself or herself");
+            sen.push_back("himself or herself");
         }
         else if (sen[i] == "himself." || sen[i] == "herself.")
         {
-            sen1.push_back("himself or herself.");
+            sen.push_back("himself or herself.");
         }
         else if (sen[i] == "His" || sen[i] == "Hers")
         {
-            sen1.push_back("His or hers");
+            sen.push_back("His or hers");
         }
         else if (sen[i] == "his" || sen[i] == "hers")
         {
-            sen1.push_back("his or hers");
+            sen.push_back("his or hers");
         }
         else if (sen[i] == "his." || sen[i] == "hers.")
         {
-            sen1.push_back("his or hers.");
-        }
-        else
-        {
-            sen1.push_back(sen[i]);
+            sen.push_back("his or hers.");
         }
     }
 
-    for (int i = 0; i < sen1.size(); i++)
+    for (int i = 0; i < sen.size(); i++)
     {
-        cout << sen1[i] << " ";
+        cout << sen[i] << " ";
     }
 }
